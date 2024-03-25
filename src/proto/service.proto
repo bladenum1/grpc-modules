@@ -1,0 +1,22 @@
+syntax = "proto3";
+
+/// Basic package.
+package Basic;
+
+/// Simple get request.
+message GetRequest
+{
+}
+
+/// Simple get response.
+message GetResponse
+{
+}
+
+/// Basic service.
+service Server
+{
+    /// Get method.
+    rpc Get(GetRequest) returns (GetResponse);
+}
+
